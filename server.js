@@ -2,13 +2,13 @@ const port = 3334
 import express from 'express'
 const app = express()
 
-app.get('/perfil/:nome/:profissao', (req, res) => {
-    res.send(`<h1>Seja bem vindo, ${req.params.nome}! Você é um(a) excelente ${req.params.profissao}<h1/>`)
-})
+// app.get('/perfil/:nome/:profissao', (req, res) => {
+//     res.send(`<h1>Seja bem vindo, ${req.params.nome}! Você é um(a) excelente ${req.params.profissao}<h1/>`)
+// })
 
-app.get('/perfil', (req, res) => {
-    res.send(req.query["profissao"])
-})
+// app.get('/perfil', (req, res) => {
+//     res.send(req.query["profissao"])
+// })
 
 app.get('/calculadora/:operacao/:x&:y', (req, res)=> {
 
